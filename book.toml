@@ -1,0 +1,22 @@
+[book]
+authors = [""]
+language = "ie"
+multilingual = false
+src = "src"
+title = "Manual de Conversation e Corespondentie"
+description = ""
+
+[output.html]
+theme = "src/theme"
+default-theme = "rust"
+preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/occidental-lang/Manual-de-Conversation-e-Correspondentie"
+site-url = "/manual-de-conversation/"
+google-analytics = "UA-151655688-1"
+
+[output.html.fold]
+enable = true
+level = 0
+
+[build]
+build-dir = "docs"

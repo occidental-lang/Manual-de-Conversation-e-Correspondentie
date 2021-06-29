@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Excursion - Manual de Conversation e Corespondentie</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Manual de Conversation e Corespondentie</a></li><li class="chapter-item affix "><a href="0.html">Li Tot Textu</a></li><li class="spacer"></li><li class="chapter-item "><a href="maxim-comun.html"><strong aria-hidden="true">1.</strong> Maxim Comun Paroles</a></li><li class="chapter-item "><a href="tempore.html"><strong aria-hidden="true">2.</strong> Li Témpore</a></li><li class="chapter-item "><a href="dom.html"><strong aria-hidden="true">3.</strong> Dom</a></li><li class="chapter-item "><a href="viage.html"><strong aria-hidden="true">4.</strong> Viage</a></li><li class="chapter-item "><a href="hobbies.html"><strong aria-hidden="true">5.</strong> Hobbies</a></li><li class="chapter-item "><a href="cite.html"><strong aria-hidden="true">6.</strong> In li Cite</a></li><li class="chapter-item "><a href="comercie.html"><strong aria-hidden="true">7.</strong> Comercie</a></li><li class="chapter-item expanded "><a href="excursion.html" class="active"><strong aria-hidden="true">8.</strong> Excursion</a></li><li class="chapter-item "><a href="jurnales.html"><strong aria-hidden="true">9.</strong> Jurnales, Reclames, Anuncias</a></li><li class="chapter-item "><a href="politica.html"><strong aria-hidden="true">10.</strong> Politica</a></li><li class="chapter-item "><a href="religiones.html"><strong aria-hidden="true">11.</strong> Religiones</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Manual de Conversation e Corespondentie</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/Manual-de-Conversation-e-Correspondentie" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="promenada-e-excursion"><a class="header" href="#promenada-e-excursion">Promenada e Excursion</a></h2>
+<p>Li cite e li rure. — Arbores, bosc, boscages, camp, farm, flor, forest, insul, jardin, loc, mar, mont, montane, land, campanie, pais, petre, plane, pasturage, fonten, bronn, rive, river, fluvie, via, sand, valley, village.</p>
+<p>Li paisage es admirable, ples regardar. In un latere noi vide li mar e un bell plage de sand, un poc plu lontan li intrada del port, u es mani naves, segle-naves e vapor-naves, anc litt botes. Li port es protectet per un diga e sur li cayes es mult marineros e dockers qui deschargea li contenage del naves, per cranes. Li merces es ductet in li staples. Quande un tempest eveni, on posse vider grand ondes, li vente sufla per un terribil rapidita e fortie. Regretabilmen sovent li naves naufragia. Ho-tempore tamen, li signalisation es tre bon fat, in plu del semafores, on have boyes e balises e ja in quelc grand portes, li radio-guidage (pilotage).</p>
+<p>In contrast si noi regarda in li altri latere, noi vide li majestos montes, con su pintas nivos, li glaciares, li abrupt roccas. Quelcvez on ne posse vider li culmine del montes pro li nive, li pluvia o li nebules. Mult audacios alpinistes ama climbar li montes, illi have un dors-sac e un grand baston e fune (cord). Li sol fa bril’ar li camp de nive, ma anc in li nocte, si li aer es clar on posse vider sub li luce del lune li blancita.</p>
+<p>Durant li vacanties, mani homes ama ear ye li mar-rive, altris in li montes, altris prefere li calm campan’e, inter li campes e forests, u on posse piscar e chassar. Li yunes ama mult migrar e campar in li rure. Sovent illi es membres de truppes de scouts, e curre e climbe tra li boscages in liber aer. Per li facilitas del medies de communication it es nu facil fuyar li grand cites. Omni soledi mult citeanes departe per li trenes, bicyclettes, motorcyclettes o automobiles e it es por illi un plu san e plu agreabil distraction quam restar includet in li cafes e birrerias. Altri per rem-botes promena sur li river e ban’e e svima in aqua frisc.</p>
+<h2 id="li-tempo"><a class="header" href="#li-tempo">Li Tempo</a></h2>
+<p>Hodie li tempo es bell, li sol brill’a e es solmen quelc nubes in li ciel, ma yer li ciel esset obscur e durant li die pluviat plur vez. Li calore ne es tam grand quam in li ultim annu e e mem li temperatura es frisc e presc frigid. Forsan it deveni del strumes, con grel e tonner, queles evenit antey un seman. In hiverne sovent li ciel es nebulos e nivea e glacia. In li tropical landes on posse timer li uraganes devastatori.</p>
+<h2 id="bicycles"><a class="header" href="#bicycles">Bicycles</a></h2>
+<p>Frame, rotes. — Stange de direction. — Forc. — Fren. — Radies queles unia li felg al nabe. Sur li felg es li pneumatic bandages, queles consiste in un aer-tub e un covrage. On infla li tub per li valve. Li transmission consiste in un grand pinion (o dent-rote) quel, per un caten, transmission li movement del gambes al detri rote. Li movement circular es productet per pedales e manivelles. Li bicyclist sede sur un sedle, quel es muntat sur ressores por amortir li chocs del via. Paramuddes protecte in case de mal tempo. On averti per un cornett o un tintinette. Ye li direction-tub es li lanterne.</p>
+<h2 id="automobiles"><a class="header" href="#automobiles">Automobiles</a></h2>
+<p><em>Motor</em>. — Motor ye 2, 4, cycles : aspiration, explosion, compression, escapament. 4 vertical cylindres, 2 horizontal cylindres. Diametre 60 mm., curre 105 mm, monobloc, con cap demuntabil. Valves. — Piston, anneles, chambre de combustion, bielle, manivelle, suport, con balles. — Vol-rote (mass-rote). — Distribution : pinion, cam-axe, pussores de valve, ingranages. — Carter (manivelle-bux).</p>
+<p><em>Accension</em> : Alt-tension magneto. — Dynamo. — Avans e retard. — Candel. — Brosse. — Scintille. — Distributor. — Lever de ruptura.</p>
+<p><em>Carburator</em> : Duplic spruzzator. — Aer-strangulator. — Constant-Nivell. — Agul’e. — Flottero. — Filtre. — Robinett.</p>
+<p><em>Refrigidation</em> : thermosyphon. — Pumpe. — radiator. — Ventilator. — Strap del ventilator.</p>
+<p><em>Lubrification</em> : Excentre-pumpe-oleo. — Filtre. — Sub pression.</p>
+<p><em>Cuplage</em> : Accuplator, per discs, per cone, per un sol disc, per expansibil segmentes, masculin parte, feminin parte, forc de cuplage. Pedal de cuplage.</p>
+<p><em>Bux de ingranages</em> : culissant ingranage. Tri changes ad avan e un retro. Levere.</p>
+<p><em>Transmission</em> : per cardan, per caten, per strap.</p>
+<p><em>Detra-axe</em> Differential, support con balles, coron-rote e pinion, spiral-dentes.</p>
+<p><em>Avan-axe</em> : forjat, nickel, stal.</p>
+<p><em>Direction</em> : direction-rote, flexibil, scruv sin fine, biellette de direction.</p>
+<p><em>Frenes</em> : manu-fren. — Ped-fren. — Pedale, tambur, blocks de fren. — Guances. — Levere del manu-fren. — Fren per servo-motor.</p>
+<p><em>Chassi</em>* : frame, ressor, axes, gemelles (lashes). Transversal ressor. — Cantilever-ressor. — Bolt, scrub, scrub-matre.</p>
+<p><em>Rotes</em> : felg-bandage : covrage, aer-tub, valve, cap, valve-clapp, vind, pneu-levero-desmuntor. — Cement. — Connection. — Pump. — Talc, tel’e. Plastre.</p>
+<p><em>Reservuor de gasoline</em> (benzin). — Petroleo (kerosene). — Olio, grass.</p>
+<p><em>Electrical equipage</em>. — Dynamo, interruptor, fusibil, amperemetre sur li instrument-tablette. — Batterie de accumulatores. — Self-starter.</p>
+<p><em>Escapament-bux</em> (surdine).</p>
+<p><em>Separat pezzes</em> : tapon, splint, tenon, cuneo, clove, files, spule. Per li tapon on clude un fore in un pezze, pro exemple : per li tapon de valve on clude li fore del cylindre-cap quel es super li valve. Li splint es un litt pezze ex ferro-file, fender, quel on posi ye li extremage del bolt, super li bolt-matre, per impeder ci bolt-matre des-serar se. Li clavette o li tenon es un litt pezze quel on introducte in un fensura, pro exemple li clavette quel impede li ressor de valve escapar. Li cuneo es un pezze triangular, pro exemple ti quel on posa sub li rote, quande li automobil jace, por impeder it glitter per li declivita. Un clove es un litt pezze de metal, pintat, per quel on junte du plancs o on accroche alcun object. Li files ducte electricita o es usat in flexibil transmissiones (Bowden). Li spule de alt-tension transforma li electricita de bass tension ad electricita de alt tension, per media un ruptor (vibrator).</p>
+<p>Ube on repara li automobiles ? u es un garage ?</p>
+<p>Mi accumulator es deschargeat. — Mi scintill-candel es ruptet. It es un curt-circuit in alcun loc, mi projector ne funciona, solmen li lateral lampes. Ples regardar li valves. It sembla que it es necess grindar les. Li compression es febli. It ne starta. Ples serrar completmen (dur) ti scruvas. Ti connection (electric) es lax. Mi reservoir es foret, ples soldar it. Li motor ne accende bon, it es mult mis-foyes. Li spruzzator del carburator es occludet. Un mashe del caten es ruptet. Yo havet un panne (mis-funcionament). Li maxim usat utensiles es : pince, martell, scruv-tornator, adjustabil clave, platt claves, lim.</p>
+<p><em>Carrosserie</em> : apertet, cludet : torpedo, cabriolet, camion, camionnette.</p>
+<h2 id="radio-apparates"><a class="header" href="#radio-apparates">Radio-Apparates</a></h2>
+<p>Omni radio-apparat consiste in un collector (antenna o cadre), un systema de sintonisation (accord) quel es un spule (bobine), e un detector (electron-tub o crystall-detector) e maxim sovent un contact ad terre.</p>
+<p>Aparate con un tube consiste ex li secuent partes: atenne, spule de induction de alcun specie (cylindrie, corb, plat, vafle) un grid-resistentie e condensator, un reostat por li calentation del filament, un tub-supporter, divers terminales. Li electron-tube (o valve, o lamp) consiste in un tube de vitre, hermeticmen closet e vacui de aero, un grid, un placca, un filament. Anc it es tubes con du, trio o plur grides. On posse adjunter al apparate, secun volunta, un spul in plus por producter reaction, un variabil condensator por exact syntonisation (accord) con o sin demultiplicator o vernier. Li accord es direct (simplic) o indirect (per induction : Tesla, Bourne o aperiodic).</p>
+<p>Du fontes de electricita es necess : un ye bass tension por li calentation del filament (4 till 6 volts) un ye alt tension por furnir li corrent de placca (40 till 150 volts). On usa sive accumulatores, sive sicc batteries.</p>
+<p>Pos detection, on infortia li sones per transformatores ye bass frequentie. Anc on posse infortiar les per un reaction-spule ancient per induction ad li accord-spule.</p>
+<p>Ante detection on posse infortiar li lontan signales per accord in alt frequentie, per resonantie, trans-formator, etc.</p>
+<p>Por obtener variationes de current, on accupla li spules.</p>
+<p>Un tre stran’i fenomen es li infebliment del signales per un inconosset maniere, nominat fading.</p>
+<p>Li currentes es collectet e transformat ad sones per li escutor (simplic) o duplic escutor, o tre sovent per un alt-parlator, quel es del typ cornet o diffusor (cone). Ho-tempore li radio diffusion (broadcasting) es tre bon organisat ; existe mult radiostationes in omni landes del munde e li numere del radio-escutores cresce omni-die. In plu existe fanatic radio-amatores, queles cuida specialmen pri radio-telegraphie e obtene admirabil resultates precipue per curt ondes. Sam quam pri li mundi-lingue, li maxim bell resultates es obtenet in radio per devoet e laborios amatores.</p>
+<h2 id="aviation"><a class="header" href="#aviation">Aviation</a></h2>
+<p>Pro que li aviation deveni un medie de transport sat diffuset, noi cita li maxim usat termines.  It es ver que li majorite es li sam quam per li automobiles. Tamen un avion o aeroplane es monoplan o biplan. It possede un corpore e ales. Li motor es ye aer-refrigidation o ye aqua-refrigidation. It es rotativ o fix. Un o plur helices producte li propulsion. Ja mult aviation-portos existe, li maxim grand es tis de Le Bourget (Paris), Croydon (London) e Tempelhof (Berlin). Li unesim aviator qui crossat Atlantica e venit de New-York till Paris esset li famos Lindbergh. Costes e Le Brix fat li tur del munde.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="comercie.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="jurnales.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="comercie.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="jurnales.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+        <!-- Google Analytics Tag -->
+        <script type="text/javascript">
+            var localAddrs = ["localhost", "127.0.0.1", ""];
+
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-151655688-1', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+        </script>
+        
+
+    </body>
+</html>

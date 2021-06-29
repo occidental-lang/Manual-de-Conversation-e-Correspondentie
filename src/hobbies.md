@@ -1,0 +1,7 @@
+## Tabac
+
+Esque vu fuma ? — Yes, yo fuma. — Ples prender un cigarette. — No, merci, yo prefera fumar mi pip. — Anc un bon cigarr es vermen agreabil. — Qual tabac vu apprecia ? — Yo apprecia li mild turc. — E yo prefere li fort Virginia. — Ci mi tabac-sac. Yo lassat mi cigarr-bux sur li table. — Ples dar me un inflamette por incender mi cigarette. — U es mi cigarett-tub ?
+
+## Musica, Cantada
+
+Esque vu es musicant ? No, regretabilmen, yo mult ama li musica, ma yo save luder per null instrument. Mi sestra lude bonissim per piano e mi fratre es un excellent violinist ; anc il save luder per li violon-cello. — Vu apprecia li cupre-instrumentes, precipue li saxofon e li cornett. Nor cusino es un grand amator de clarinete e su yun fratre lude per li flyte. — In li militari fanfaras, on trova clariones, tambures, trompetes. — Deman noi intente ear in li Opera-teatre. — Illa es un cantatresse qui canta admirabilmen. — Tenor, basse, soprano. — Yo confesse que li sol musica, quel yo posse luder es per li fonograf (machine parlant). Sovent on audit tre bel arias o splendid melodies. Li yun homes de hodie ama lie nov dansas : shimmy, fox-trott, black-bottom, charleston e altri dansas de negros, anc li dansas sud-american : tango, paso doble, samba etc., ma yo prefere li ancian danzas classic : valse, mazurka, polka, scottish, quadrilles, etc. — Li proxim vez, quande vu va venir, ples apportar vor fonograf con vor discas (records) preferet. — Certimen, e mem yo va apportar li maxim nov invention, mi pick-up o reproductor radio-fonografic.

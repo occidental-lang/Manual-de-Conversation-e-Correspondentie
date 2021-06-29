@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Viage - Manual de Conversation e Corespondentie</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Manual de Conversation e Corespondentie</a></li><li class="chapter-item affix "><a href="0.html">Li Tot Textu</a></li><li class="spacer"></li><li class="chapter-item "><a href="maxim-comun.html"><strong aria-hidden="true">1.</strong> Maxim Comun Paroles</a></li><li class="chapter-item "><a href="tempore.html"><strong aria-hidden="true">2.</strong> Li Témpore</a></li><li class="chapter-item "><a href="dom.html"><strong aria-hidden="true">3.</strong> Dom</a></li><li class="chapter-item expanded "><a href="viage.html" class="active"><strong aria-hidden="true">4.</strong> Viage</a></li><li class="chapter-item "><a href="hobbies.html"><strong aria-hidden="true">5.</strong> Hobbies</a></li><li class="chapter-item "><a href="cite.html"><strong aria-hidden="true">6.</strong> In li Cite</a></li><li class="chapter-item "><a href="comercie.html"><strong aria-hidden="true">7.</strong> Comercie</a></li><li class="chapter-item "><a href="excursion.html"><strong aria-hidden="true">8.</strong> Excursion</a></li><li class="chapter-item "><a href="jurnales.html"><strong aria-hidden="true">9.</strong> Jurnales, Reclames, Anuncias</a></li><li class="chapter-item "><a href="politica.html"><strong aria-hidden="true">10.</strong> Politica</a></li><li class="chapter-item "><a href="religiones.html"><strong aria-hidden="true">11.</strong> Religiones</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Manual de Conversation e Corespondentie</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/Manual-de-Conversation-e-Correspondentie" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="in-li-ferrovia-relvia"><a class="header" href="#in-li-ferrovia-relvia">In li Ferrovia (Relvia)</a></h2>
+<p>U es li buró de information ? — U es li intrada ? — U es li exeada ? — U es li station ? li bufete ?, li venditoria de billetes ? — Yo vole consultar li tren-libre (horarium). — U es li bagage-depó, li lavatoria ? li closet ? — Ples dir me, ye quel clocca es li tren a Bruxelles ? — Ye quel clocca it ariva ? — Quel es li ultim tren till Wien ? — Esque it es un tren direct ? Quande departe li tren ? — Pos quant minutes ? Quande va venir li tren a Paris ? — Esque ci tren es rect por Milano ? — U es li sala de atende ? — U es li inregistration del bagages ? Un billete de duesim classe til Berlin, vade e retro. — Esque noi deve changear li tren til Rotterdam ? — U es li platform del tren til Geneve ? Esque ti-ci tren es express ? — Yo have solmen un billete de triesim classe. — U noi es ? — Ad u noi ea ? — Esque it es un líber loc in ti-ci cupe ? — In quel wagon noi deve intrar ? — Esque ci tren stoppa in Cassel ? — Li proxim halta es Bern.</p>
+<p>Ci es li conductor, qui veni controlar nor billetes.</p>
+<h2 id="in-li-hotel"><a class="header" href="#in-li-hotel">In li Hotel</a></h2>
+<p>Noi desira un chambre con un lette por du persones. — Esque vu have un chambre líberi ? — Ye quel etage ? Facie al strade, con calid aqua, con balne-chambre. Quant custa por un die ? por un semane ? por un mensu ? — Quant por li chambre solmen, por li chambre e li repastes ? — Por li chambre con li matin-dejuné ? — Yo desira un chambre plu modic, ti-ci es un poc car. — Bon, yo prende ti-ci chambre. — Ples dar mi li clave. — Quel es li númere del chambre ? Ye quel clocca vu servi li repastes ? — Ples aportar me li dejuné in mi chambre ye clocca sett e demí. — Fórsan, vu va reciver lettres por noi. — Esque Sr N… logia ci ? — Quande il veni, ples informar me inmediatmen (strax). — Esque mi bagage ha ja arrivat ? Porta it in nor chambre.  — Ples far descender it. — Portero, ea in mi chambre e porta mi manu-sacc. — U es mi valise ? Avigila me ye clocca six e quart, precis. Ne trubla me ante clocca ott. — Ples nettar li chambre. — Yo desira paper, un covert, un portaplum, incre. — Ples preparar mi conto, yo va partir deman.</p>
+<h2 id="li-café-e-li-restaurant-restaurería"><a class="header" href="#li-café-e-li-restaurant-restaurería">Li Café e li Restaurant (Restaurería)</a></h2>
+<p>U noi posse lavar nos ? — Ples preparar un diné por tri persones. — Noi va dinear ye clocca set. — Servi nos un aperitive. — Esque noi va dinear secun li list (cart) a ye fixat precis ? — Quant es li fixat precie ? — Vin includet ? — Servero, aporta nos li menú. — Esque vu have… — Servero, li conto, yo peti. — Ci vor gratification (trinc-moné). — Da me un serviette, coclare, furca, cultelle, glass, botelle, un caraffe, un platt, un platil, li saliere, pipriere, vinagre, oleo, sinape, butre. — Blanc, rubi vin. — Bir, cidre (pom-vin), aqua mineral, café, te, lacte, glacie. — Pan frisc. — Sup. — Oves. — Omelette, — Oves bollit. — Carne de bove, de vaccello, de mutton, de agnell, rostat, bollit, in ragut, frit, haccat con sauce. — Cotlet, beefsteak (bifstec). — Gallina, perdriz, carp, crev (ett), anguil, roll-mops, salme, sardin, anchove, morue. — Legumes : Potates, frit, artichoc, cauliflower, blanc faseoles, verd faseoles, pises, carottes, napes, rapes, radis, Bruxelles-caules, oxal, sauerkraut, asparges, champiniones, macaroni, nudel. — Salade de cress, de cicore, de lattug, de celeri. — Patete de vaccelle e jambon. — Socisse, socisson (salami), sangue-sociesse. — Caseo : Holland-caseo, Sviss caseo, crem-caseo. — Dessert. — Fructes : Pom, pom-marmelade, compott, pir, citron, orange, crusher, fresber. Bramber, avellanes, cereses, castanies, mandules, nuces, uves, (vit-beres), melon, banane, persica. — Confect (F. Confitures. E. Jam). — Torte(F. Gateau, E. Cake, D. Kuche). — Chocolate, sucre. — Liqueurs: cognac, brandy, rum, punch, wiski. — Table-toale, serviette.</p>
+<h2 id="in-li-postal-buró"><a class="header" href="#in-li-postal-buró">In li Post(al) Buró</a></h2>
+<p>U es li postal buró ? li telefon, li telegraf ? — Da me un post-marca, yo peti. — Per quant marcas on deve afrancar ci lettre ? — Da me un post-cart, un postal-mandat… por extrania. — Quant es li change ? — U yo posse incassar un mandat ? — Ci mi identification-documentes, mi passport, mi international cart del union postal universal. — Fenestre de postrestant. — Esque vu have alcun currier por me ? — Ples inregistrar ci lettre, ci paccage. It have un valore de… — Qual es li póndere de ci paccage ? It have null valore. — Specimenes sin valore. — Printates. — It contene null botelle, null liquid, null object taxabil per li doane. — Da me un formulare por telegramma. — Quant por un parol, adress includet. — Voca numeró… Telefona a… Quant es li precie por telefonar a… </p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="dom.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="hobbies.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="dom.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="hobbies.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+        <!-- Google Analytics Tag -->
+        <script type="text/javascript">
+            var localAddrs = ["localhost", "127.0.0.1", ""];
+
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-151655688-1', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+        </script>
+        
+
+    </body>
+</html>

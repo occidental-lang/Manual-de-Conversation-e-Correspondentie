@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Li Tot Textu - Manual de Conversation e Corespondentie</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Manual de Conversation e Corespondentie</a></li><li class="chapter-item affix "><a href="0.html" class="active">Li Tot Textu</a></li><li class="spacer"></li><li class="chapter-item "><a href="maxim-comun.html"><strong aria-hidden="true">1.</strong> Maxim Comun Paroles</a></li><li class="chapter-item "><a href="tempore.html"><strong aria-hidden="true">2.</strong> Li Témpore</a></li><li class="chapter-item "><a href="dom.html"><strong aria-hidden="true">3.</strong> Dom</a></li><li class="chapter-item "><a href="viage.html"><strong aria-hidden="true">4.</strong> Viage</a></li><li class="chapter-item "><a href="hobbies.html"><strong aria-hidden="true">5.</strong> Hobbies</a></li><li class="chapter-item "><a href="cite.html"><strong aria-hidden="true">6.</strong> In li Cite</a></li><li class="chapter-item "><a href="comercie.html"><strong aria-hidden="true">7.</strong> Comercie</a></li><li class="chapter-item "><a href="excursion.html"><strong aria-hidden="true">8.</strong> Excursion</a></li><li class="chapter-item "><a href="jurnales.html"><strong aria-hidden="true">9.</strong> Jurnales, Reclames, Anuncias</a></li><li class="chapter-item "><a href="politica.html"><strong aria-hidden="true">10.</strong> Politica</a></li><li class="chapter-item "><a href="religiones.html"><strong aria-hidden="true">11.</strong> Religiones</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Manual de Conversation e Corespondentie</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/Manual-de-Conversation-e-Correspondentie" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="maxim-comun-paroles"><a class="header" href="#maxim-comun-paroles">Maxim Comun Paroles</a></h2>
+<p>Yes. — Ne. — Ples. — Mersí. — Yes cert(men). — Totmen ne. — Con plesur. — Cert(men) ne. — Naturalmen. — It es evident. — Sin dúbite. — Yo have. — Vu es. — Noi es. — Esque vu have ? — Esque il es… ? — Ili ne have it. — Noi have… — Esque vu vendi… ? — Yo vole comprar… — U noi posse trovar… ? — In alcun loc. — Yo peti pardon. — Ples excusar me. — Yo mersia vos. — Cuida ! — Atente ! — Atention ! — Tam plu bon. — Quam regretabil ! — Quel damage ! — It ne es impedibil.</p>
+<h2 id="por-demandar-e-comandar"><a class="header" href="#por-demandar-e-comandar">Por Demandar e Comandar</a></h2>
+<p>Aporta. — Misse. — Retromisse. — Retorna. — Prende. — Da. — Veni. — Compra. — Paya. — Fa. — Di. — Escuta. — Regarda. — Hasta. — Atende.</p>
+<h2 id="comprension"><a class="header" href="#comprension">Comprension</a></h2>
+<p>Esque vu parla occidental ? — Esque vu parla francés, angles, italian, german ? — Il es sviss. — Yo ne comprende vos. — Vu parla tro rapidmen. — Ples ne parlar tam rapidmen. — Parla lentmen. — Vu parla mult tro rapidmen. Esque vu comprende me ? — Ples repetir it. — Repeti it. — Esque vu vole repetir it. — Ho yes, yo comprende perfectmen. — Yo regreta ne comprender vos. — Ples pardonar me se yo trubla vos.</p>
+<h2 id="questiones"><a class="header" href="#questiones">Questiones</a></h2>
+<p>Esque to es vor ? To es mi. — Quo es to ? — Qualmen es to ? — Quant custa it ? — U es mi chapel ? — Esque vu audi ?</p>
+<h2 id="sanitá--politesse"><a class="header" href="#sanitá--politesse">Sanitá. — Politesse</a></h2>
+<p>Bon die, senior. — Bon nocte, seniora. — Bon vésper, senioretta. — Bon apetite. — Bon viage. — Til deman. — Til bentost. — Qualmen vu standa ? — Yo standa tre bon, mersí. — Yo standa mal. — Esque es alcun cos nov ? — No, nullcos nov. — U vu logia ? — Veni vider me. — Yo ne posse ho-témpore. — Ne in ci moment. — Yo es tro ocupat. — Noi have rendevú. — Noi va incontrar les ye quar horas e demí. (Noi va incontrar les ye clocca quar e demí.) — Adío. — Til revide. — Til ho-vésper.</p>
+<h2 id="por-comparar"><a class="header" href="#por-comparar">Por Comparar</a></h2>
+<p>Il es plu grand quam me. — It es tam grand quam li table. — Ella es minu fort quam me. — Vu es li maxim habil de noi. — Il es li minst (minim) felici del tot familie. — Aprender li international lingue es bon, utilisar it es melior, ma propagar it es optim. — Ante tri annus mi sanitá esset mal, durant li ultim annu it esset pejor, ma ho-témpore it es pessim.</p>
+<h2 id="li-témpore"><a class="header" href="#li-témpore">Li Témpore</a></h2>
+<p>Un annu have decidu mensus : januar, februar, marte, april, may, junio, julí, august, septembre, octobre, novembre, decembre. — Un mensu contene quar semanes. — Un semane es sett dies : lunedí, mardí, mercurdí, jovedí, venerdí, saturdí, soledí. — Existe quar sesones : verne, estive, autun e hiverne.</p>
+<p>Hodie. — Yer. — Deman. — Posdeman. — Anteyer. — Bentost. — Alquande. — Quande. — Alor. — Nequande, jamá, null vez, in null témpore.</p>
+<p>Ne ja, ancor ne. — Ja. — Ho-matin. — Medidie, midie. — Pos-medidie, pos-midie. — Ho-vésper. — Ho-nocte. — Medinocte, minocte. — Quel hora es? (Quel clocca es?) — It es tri horas e demí (It es clocca tri e demí). — It es quin horas e tri quartes. (It es clocca quin e tri quartes.) — It es sett horas e duant minutes. (It es clocca sett e duant minutes.) — It es precis quar horas, triant un minutes e quarant du secondes. (It es precis clocca quar, triant un minutes e quarant du secondes.) — Li ultim semane. — Ante quar dies, quar dies in retro. — Pos quin dies.</p>
+<p>Fest-die. — Carema. — Pasca. — Pentecost. — Christnascentie (Yul). — Festa de omni santes. — Anniversarie. — Nov-annu.</p>
+<p>--- Something is cut off. Probably a section about Family. ---</p>
+<p>tri annus. — Yo have du infantes, un púer (garson) e un flicca (puella). — Mi fratre anc es maritat, ma mi sestra es celib. — Mi cusines habita in li sam cité. — Mi avo e mi ava morit desde plur annus. — Sovent, mi oncle e mi tanta visita nos, omni vez quande ili veni in nor district.</p>
+<h2 id="dom--hem"><a class="header" href="#dom--hem">Dom — Hem</a></h2>
+<p>Vu have un bell logí. — Li logí posse consister in un dom (con o sin jardin) o plu sovent, in li grand cités, in un logiment. — Quelc vez, it es solmen un logiment ye chascun etage. — Altri vez posse esser pluri logimentes. — Quant chambres vu have ? — Noi have du dormi-chambres, un manja-chambre, un salon, un cabinet (buró, scrir-chambre), balne-chambre e closete. — Un mansarde e un cava. Anc un cocinería e un victualería, plus un lavería. — Li chambres intercomunica e li portas aperte al coridor. — Detra li dom es li corte.</p>
+<h2 id="mobles"><a class="header" href="#mobles">Mobles</a></h2>
+<p>In li dormi-chambre es un lette, un comode (tiruor-moble), un toilett-table, un sofa, plur stules, un fotel, un lav-table, un scaf, un spegul súper li camine. Picturas es ye li mures. Li fenestres have cortines. — In li lette es un ressor-matrasse, un matrasse, un transversal cussin, un o du cap-cussines, toales de lette, covrituras.</p>
+<p>In li manje-chambre es un table, un moble por li platiles. </p>
+<p>In li cocinería es un forn, un lav-petre, un gas-forn.</p>
+<p>In li cabinet es un scri-table e un libre-scaf (librarium), plur etageres.</p>
+<h2 id="in-li-ferrovia-relvia"><a class="header" href="#in-li-ferrovia-relvia">In li Ferrovia (Relvia)</a></h2>
+<p>U es li buró de information ? — U es li intrada ? — U es li exeada ? — U es li station ? li bufete ?, li venditoria de billetes ? — Yo vole consultar li tren-libre (horarium). — U es li bagage-depó, li lavatoria ? li closet ? — Ples dir me, ye quel clocca es li tren a Bruxelles ? — Ye quel clocca it ariva ? — Quel es li ultim tren till Wien ? — Esque it es un tren direct ? Quande departe li tren ? — Pos quant minutes ? Quande va venir li tren a Paris ? — Esque ci tren es rect por Milano ? — U es li sala de atende ? — U es li inregistration del bagages ? Un billete de duesim classe til Berlin, vade e retro. — Esque noi deve changear li tren til Rotterdam ? — U es li platform del tren til Geneve ? Esque ti-ci tren es express ? — Yo have solmen un billete de triesim classe. — U noi es ? — Ad u noi ea ? — Esque it es un líber loc in ti-ci cupe ? — In quel wagon noi deve intrar ? — Esque ci tren stoppa in Cassel ? — Li proxim halta es Bern.</p>
+<p>Ci es li conductor, qui veni controlar nor billetes.</p>
+<h2 id="in-li-hotel"><a class="header" href="#in-li-hotel">In li Hotel</a></h2>
+<p>Noi desira un chambre con un lette por du persones. — Esque vu have un chambre líberi ? — Ye quel etage ? Facie al strade, con calid aqua, con balne-chambre. Quant custa por un die ? por un semane ? por un mensu ? — Quant por li chambre solmen, por li chambre e li repastes ? — Por li chambre con li matin-dejuné ? — Yo desira un chambre plu modic, ti-ci es un poc car. — Bon, yo prende ti-ci chambre. — Ples dar mi li clave. — Quel es li númere del chambre ? Ye quel clocca vu servi li repastes ? — Ples aportar me li dejuné in mi chambre ye clocca sett e demí. — Fórsan, vu va reciver lettres por noi. — Esque Sr N… logia ci ? — Quande il veni, ples informar me inmediatmen (strax). — Esque mi bagage ha ja arrivat ? Porta it in nor chambre.  — Ples far descender it. — Portero, ea in mi chambre e porta mi manu-sacc. — U es mi valise ? Avigila me ye clocca six e quart, precis. Ne trubla me ante clocca ott. — Ples nettar li chambre. — Yo desira paper, un covert, un portaplum, incre. — Ples preparar mi conto, yo va partir deman.</p>
+<h2 id="li-café-e-li-restaurant-restaurería"><a class="header" href="#li-café-e-li-restaurant-restaurería">Li Café e li Restaurant (Restaurería)</a></h2>
+<p>U noi posse lavar nos ? — Ples preparar un diné por tri persones. — Noi va dinear ye clocca set. — Servi nos un aperitive. — Esque noi va dinear secun li list (cart) a ye fixat precis ? — Quant es li fixat precie ? — Vin includet ? — Servero, aporta nos li menú. — Esque vu have… — Servero, li conto, yo peti. — Ci vor gratification (trinc-moné). — Da me un serviette, coclare, furca, cultelle, glass, botelle, un caraffe, un platt, un platil, li saliere, pipriere, vinagre, oleo, sinape, butre. — Blanc, rubi vin. — Bir, cidre (pom-vin), aqua mineral, café, te, lacte, glacie. — Pan frisc. — Sup. — Oves. — Omelette, — Oves bollit. — Carne de bove, de vaccello, de mutton, de agnell, rostat, bollit, in ragut, frit, haccat con sauce. — Cotlet, beefsteak (bifstec). — Gallina, perdriz, carp, crev (ett), anguil, roll-mops, salme, sardin, anchove, morue. — Legumes : Potates, frit, artichoc, cauliflower, blanc faseoles, verd faseoles, pises, carottes, napes, rapes, radis, Bruxelles-caules, oxal, sauerkraut, asparges, champiniones, macaroni, nudel. — Salade de cress, de cicore, de lattug, de celeri. — Patete de vaccelle e jambon. — Socisse, socisson (salami), sangue-sociesse. — Caseo : Holland-caseo, Sviss caseo, crem-caseo. — Dessert. — Fructes : Pom, pom-marmelade, compott, pir, citron, orange, crusher, fresber. Bramber, avellanes, cereses, castanies, mandules, nuces, uves, (vit-beres), melon, banane, persica. — Confect (F. Confitures. E. Jam). — Torte(F. Gateau, E. Cake, D. Kuche). — Chocolate, sucre. — Liqueurs: cognac, brandy, rum, punch, wiski. — Table-toale, serviette.</p>
+<h2 id="in-li-postal-buró"><a class="header" href="#in-li-postal-buró">In li Post(al) Buró</a></h2>
+<p>U es li postal buró ? li telefon, li telegraf ? — Da me un post-marca, yo peti. — Per quant marcas on deve afrancar ci lettre ? — Da me un post-cart, un postal-mandat… por extrania. — Quant es li change ? — U yo posse incassar un mandat ? — Ci mi identification-documentes, mi passport, mi international cart del union postal universal. — Fenestre de postrestant. — Esque vu have alcun currier por me ? — Ples inregistrar ci lettre, ci paccage. It have un valore de… — Qual es li póndere de ci paccage ? It have null valore. — Specimenes sin valore. — Printates. — It contene null botelle, null liquid, null object taxabil per li doane. — Da me un formulare por telegramma. — Quant por un parol, adress includet. — Voca numeró… Telefona a… Quant es li precie por telefonar a… </p>
+<h2 id="tabac"><a class="header" href="#tabac">Tabac</a></h2>
+<p>Esque vu fuma ? — Yes, yo fuma. — Ples prender un cigarette. — No, merci, yo prefera fumar mi pip. — Anc un bon cigarr es vermen agreabil. — Qual tabac vu apprecia ? — Yo apprecia li mild turc. — E yo prefere li fort Virginia. — Ci mi tabac-sac. Yo lassat mi cigarr-bux sur li table. — Ples dar me un inflamette por incender mi cigarette. — U es mi cigarett-tub ?</p>
+<h2 id="musica-cantada"><a class="header" href="#musica-cantada">Musica, Cantada</a></h2>
+<p>Esque vu es musicant ? No, regretabilmen, yo mult ama li musica, ma yo save luder per null instrument. Mi sestra lude bonissim per piano e mi fratre es un excellent violinist ; anc il save luder per li violon-cello. — Vu apprecia li cupre-instrumentes, precipue li saxofon e li cornett. Nor cusino es un grand amator de clarinete e su yun fratre lude per li flyte. — In li militari fanfaras, on trova clariones, tambures, trompetes. — Deman noi intente ear in li Opera-teatre. — Illa es un cantatresse qui canta admirabilmen. — Tenor, basse, soprano. — Yo confesse que li sol musica, quel yo posse luder es per li fonograf (machine parlant). Sovent on audit tre bel arias o splendid melodies. Li yun homes de hodie ama lie nov dansas : shimmy, fox-trott, black-bottom, charleston e altri dansas de negros, anc li dansas sud-american : tango, paso doble, samba etc., ma yo prefere li ancian danzas classic : valse, mazurka, polka, scottish, quadrilles, etc. — Li proxim vez, quande vu va venir, ples apportar vor fonograf con vor discas (records) preferet. — Certimen, e mem yo va apportar li maxim nov invention, mi pick-up o reproductor radio-fonografic. </p>
+<h2 id="in-li-cite"><a class="header" href="#in-li-cite">In li Cite</a></h2>
+<p>Esque vu have un adress-libre ? un cite-plan ? — U es li officie de policie, de turism, li dom municipal ? U es li buro de… li butique de… li magasin de… li depo de… ? In quel strade ? quel numero ?... Esque it es lontan de ci ? — U prender li tramvia ? — Esque noi ea per pedes ? — Secue li reles, poy torna ye dextre detra li ecclesie, poy ye sinistre (levul) apu li grand cafe. — Vu va incontrar un important cruzament (cruz-vias) apu li cathedral. — Ci li judicial palace. — Li tramvia stoppa avan li teatre. It es li strad u es omni maxim bon butiques. — Es mani cafes. — Li trottuare es tre street, ma on deve ear sur it pro li grand traffic sur li chosse, quel es tre mal pavat. — Certimen sovent deve evenir incontras (collisiones) inter li coches e automobiles. — Yo es astonat pri li habilita e li rapidita del cyclistes e motorcyclistes, specialmen del portatores de jurnales, illi es ver acrobates. — Li maxim bon parte del cite es li district west. Ta es li bel jardines, parcs e plazzas. In li centre del cite es li commercial strades, precipue ye e apu li grand bulvardes. Ta es anc li cinematografes e teatres de varieta. — In li district ost es li logis del ovreros, ci povri districtes fa un contrast con li eleganti strades. — In li exterior-districtes es li fabricas. Li sanitari stande es tre bon pro li tre bon installation del cloacas e li hydro-distribution, quel distribue pur aqua, filtrat e sterilisat per ozone. Li eterni problem a soluer es li desfacilita del traffic quel augmenta sempre. Pro to, proxim annu, on va comensar li construction de nov lineas del cite-ferrovia (metropolitan). Mem on di que on projecte far un rulant trotuar.</p>
+<h2 id="compras-e-comercie"><a class="header" href="#compras-e-comercie">Compras e Comercie</a></h2>
+<p>Ho-matin noi vole comprar diversi merces. Ples indicar nos li maxim bon comerciantes.</p>
+<p>Panero, ban’eria, libreria, bucheria, cafe, lacteria, svin-bucheria, papereria, restaurant, magasin de novitas, general magasines, tinteria, fructeria, spiceria, camiseria, ferrageria, chapeleria, hotel, juveleria, horlogeria, lavatoria, linageria, jurnal-venderia, sapateria, tal’ero, tabac-butique, carreteria, vin-venderia, barberia, parfumeria.</p>
+<p>Medico, chirug, dentist, drogueria, hospital, clinica. </p>
+<p>Esque vu have… ? vu vendi… ? — Quande vu va recepter it ? Quel precie ? — Quant custa ? — It es tro car. — Da me un, yo peti. — Da me un dozen. — Ples mostrar me de un altri specie, un altri type. — Quante es tis ? — Esque tis es del sam precie ? — Esque vu have un plu bon qualita, un qualita plu modic ? It ne conveni. — Noi desira un grandore plu litt, tam long… Tro… ne sat… grand, litt — levi, pesant — subtil, spess — long, curt — strett, larg — clar, obscur — dur, moll — rugos, glatt — nigri, blanc, gris, blu, verdi, yelb, rosi, brun, rubi, orangi, purpur, violett, malvi.</p>
+<p>Ye qual contour (departement) noi posse trovar ? Ples misser it al secuent adresse. — Esque noi va recepter it hodie. — Till quel clocca vor magasin resta apert ? </p>
+<h2 id="aferes--transactiones"><a class="header" href="#aferes--transactiones">Aferes — Transactiones</a></h2>
+<p>Li conto es apert, cludet. — Conto current. — Addition, subtraction, multiplication, division. — Fraction. — Factura, resummation — Payation (payament), incassation (incassament). — Payment ye liberation, contra rimborsament. — Summa, total. — Commanda, ordine.</p>
+<p>Bank. — Chec, chec crossat, cambio (lettre de cambio), tratte. — Curs del change. — Disconto. — Taxe. — Date de payament. — Annular un marca. — Signar, signatura. — Lettre de credit.</p>
+<p>Commission, transaction, differentiate, curtage, percentage. — Li gan’a, profit e perde. — Comprar e vendir. — Comprator e venditor. — Specular, speculator, speculation.</p>
+<p>Merce, mercar, mercant, mercantil, mercantilism, mercator, mercatoria, commercie, commercial, commerciant.</p>
+<p>Associat, employero (patron), employat, commiso. Contator, Representant, commercial viagero, agent, curtagero, mediator. — Li paya, li salary, li paya-die.</p>
+<h2 id="promenada-e-excursion"><a class="header" href="#promenada-e-excursion">Promenada e Excursion</a></h2>
+<p>Li cite e li rure. — Arbores, bosc, boscages, camp, farm, flor, forest, insul, jardin, loc, mar, mont, montane, land, campanie, pais, petre, plane, pasturage, fonten, bronn, rive, river, fluvie, via, sand, valley, village.</p>
+<p>Li paisage es admirable, ples regardar. In un latere noi vide li mar e un bell plage de sand, un poc plu lontan li intrada del port, u es mani naves, segle-naves e vapor-naves, anc litt botes. Li port es protectet per un diga e sur li cayes es mult marineros e dockers qui deschargea li contenage del naves, per cranes. Li merces es ductet in li staples. Quande un tempest eveni, on posse vider grand ondes, li vente sufla per un terribil rapidita e fortie. Regretabilmen sovent li naves naufragia. Ho-tempore tamen, li signalisation es tre bon fat, in plu del semafores, on have boyes e balises e ja in quelc grand portes, li radio-guidage (pilotage).</p>
+<p>In contrast si noi regarda in li altri latere, noi vide li majestos montes, con su pintas nivos, li glaciares, li abrupt roccas. Quelcvez on ne posse vider li culmine del montes pro li nive, li pluvia o li nebules. Mult audacios alpinistes ama climbar li montes, illi have un dors-sac e un grand baston e fune (cord). Li sol fa bril’ar li camp de nive, ma anc in li nocte, si li aer es clar on posse vider sub li luce del lune li blancita.</p>
+<p>Durant li vacanties, mani homes ama ear ye li mar-rive, altris in li montes, altris prefere li calm campan’e, inter li campes e forests, u on posse piscar e chassar. Li yunes ama mult migrar e campar in li rure. Sovent illi es membres de truppes de scouts, e curre e climbe tra li boscages in liber aer. Per li facilitas del medies de communication it es nu facil fuyar li grand cites. Omni soledi mult citeanes departe per li trenes, bicyclettes, motorcyclettes o automobiles e it es por illi un plu san e plu agreabil distraction quam restar includet in li cafes e birrerias. Altri per rem-botes promena sur li river e ban’e e svima in aqua frisc.</p>
+<h2 id="li-tempo"><a class="header" href="#li-tempo">Li Tempo</a></h2>
+<p>Hodie li tempo es bell, li sol brill’a e es solmen quelc nubes in li ciel, ma yer li ciel esset obscur e durant li die pluviat plur vez. Li calore ne es tam grand quam in li ultim annu e e mem li temperatura es frisc e presc frigid. Forsan it deveni del strumes, con grel e tonner, queles evenit antey un seman. In hiverne sovent li ciel es nebulos e nivea e glacia. In li tropical landes on posse timer li uraganes devastatori.</p>
+<h2 id="bicycles"><a class="header" href="#bicycles">Bicycles</a></h2>
+<p>Frame, rotes. — Stange de direction. — Forc. — Fren. — Radies queles unia li felg al nabe. Sur li felg es li pneumatic bandages, queles consiste in un aer-tub e un covrage. On infla li tub per li valve. Li transmission consiste in un grand pinion (o dent-rote) quel, per un caten, transmission li movement del gambes al detri rote. Li movement circular es productet per pedales e manivelles. Li bicyclist sede sur un sedle, quel es muntat sur ressores por amortir li chocs del via. Paramuddes protecte in case de mal tempo. On averti per un cornett o un tintinette. Ye li direction-tub es li lanterne.</p>
+<h2 id="automobiles"><a class="header" href="#automobiles">Automobiles</a></h2>
+<p><em>Motor</em>. — Motor ye 2, 4, cycles : aspiration, explosion, compression, escapament. 4 vertical cylindres, 2 horizontal cylindres. Diametre 60 mm., curre 105 mm, monobloc, con cap demuntabil. Valves. — Piston, anneles, chambre de combustion, bielle, manivelle, suport, con balles. — Vol-rote (mass-rote). — Distribution : pinion, cam-axe, pussores de valve, ingranages. — Carter (manivelle-bux).</p>
+<p><em>Accension</em> : Alt-tension magneto. — Dynamo. — Avans e retard. — Candel. — Brosse. — Scintille. — Distributor. — Lever de ruptura.</p>
+<p><em>Carburator</em> : Duplic spruzzator. — Aer-strangulator. — Constant-Nivell. — Agul’e. — Flottero. — Filtre. — Robinett.</p>
+<p><em>Refrigidation</em> : thermosyphon. — Pumpe. — radiator. — Ventilator. — Strap del ventilator.</p>
+<p><em>Lubrification</em> : Excentre-pumpe-oleo. — Filtre. — Sub pression.</p>
+<p><em>Cuplage</em> : Accuplator, per discs, per cone, per un sol disc, per expansibil segmentes, masculin parte, feminin parte, forc de cuplage. Pedal de cuplage.</p>
+<p><em>Bux de ingranages</em> : culissant ingranage. Tri changes ad avan e un retro. Levere.</p>
+<p><em>Transmission</em> : per cardan, per caten, per strap.</p>
+<p><em>Detra-axe</em> Differential, support con balles, coron-rote e pinion, spiral-dentes.</p>
+<p><em>Avan-axe</em> : forjat, nickel, stal.</p>
+<p><em>Direction</em> : direction-rote, flexibil, scruv sin fine, biellette de direction.</p>
+<p><em>Frenes</em> : manu-fren. — Ped-fren. — Pedale, tambur, blocks de fren. — Guances. — Levere del manu-fren. — Fren per servo-motor.</p>
+<p><em>Chassi</em>* : frame, ressor, axes, gemelles (lashes). Transversal ressor. — Cantilever-ressor. — Bolt, scrub, scrub-matre.</p>
+<p><em>Rotes</em> : felg-bandage : covrage, aer-tub, valve, cap, valve-clapp, vind, pneu-levero-desmuntor. — Cement. — Connection. — Pump. — Talc, tel’e. Plastre.</p>
+<p><em>Reservuor de gasoline</em> (benzin). — Petroleo (kerosene). — Olio, grass.</p>
+<p><em>Electrical equipage</em>. — Dynamo, interruptor, fusibil, amperemetre sur li instrument-tablette. — Batterie de accumulatores. — Self-starter.</p>
+<p><em>Escapament-bux</em> (surdine).</p>
+<p><em>Separat pezzes</em> : tapon, splint, tenon, cuneo, clove, files, spule. Per li tapon on clude un fore in un pezze, pro exemple : per li tapon de valve on clude li fore del cylindre-cap quel es super li valve. Li splint es un litt pezze ex ferro-file, fender, quel on posi ye li extremage del bolt, super li bolt-matre, per impeder ci bolt-matre des-serar se. Li clavette o li tenon es un litt pezze quel on introducte in un fensura, pro exemple li clavette quel impede li ressor de valve escapar. Li cuneo es un pezze triangular, pro exemple ti quel on posa sub li rote, quande li automobil jace, por impeder it glitter per li declivita. Un clove es un litt pezze de metal, pintat, per quel on junte du plancs o on accroche alcun object. Li files ducte electricita o es usat in flexibil transmissiones (Bowden). Li spule de alt-tension transforma li electricita de bass tension ad electricita de alt tension, per media un ruptor (vibrator).</p>
+<p>Ube on repara li automobiles ? u es un garage ?</p>
+<p>Mi accumulator es deschargeat. — Mi scintill-candel es ruptet. It es un curt-circuit in alcun loc, mi projector ne funciona, solmen li lateral lampes. Ples regardar li valves. It sembla que it es necess grindar les. Li compression es febli. It ne starta. Ples serrar completmen (dur) ti scruvas. Ti connection (electric) es lax. Mi reservoir es foret, ples soldar it. Li motor ne accende bon, it es mult mis-foyes. Li spruzzator del carburator es occludet. Un mashe del caten es ruptet. Yo havet un panne (mis-funcionament). Li maxim usat utensiles es : pince, martell, scruv-tornator, adjustabil clave, platt claves, lim.</p>
+<p><em>Carrosserie</em> : apertet, cludet : torpedo, cabriolet, camion, camionnette.</p>
+<h2 id="radio-apparates"><a class="header" href="#radio-apparates">Radio-Apparates</a></h2>
+<p>Omni radio-apparat consiste in un collector (antenna o cadre), un systema de sintonisation (accord) quel es un spule (bobine), e un detector (electron-tub o crystall-detector) e maxim sovent un contact ad terre.</p>
+<p>Aparate con un tube consiste ex li secuent partes: atenne, spule de induction de alcun specie (cylindrie, corb, plat, vafle) un grid-resistentie e condensator, un reostat por li calentation del filament, un tub-supporter, divers terminales. Li electron-tube (o valve, o lamp) consiste in un tube de vitre, hermeticmen closet e vacui de aero, un grid, un placca, un filament. Anc it es tubes con du, trio o plur grides. On posse adjunter al apparate, secun volunta, un spul in plus por producter reaction, un variabil condensator por exact syntonisation (accord) con o sin demultiplicator o vernier. Li accord es direct (simplic) o indirect (per induction : Tesla, Bourne o aperiodic).</p>
+<p>Du fontes de electricita es necess : un ye bass tension por li calentation del filament (4 till 6 volts) un ye alt tension por furnir li corrent de placca (40 till 150 volts). On usa sive accumulatores, sive sicc batteries.</p>
+<p>Pos detection, on infortia li sones per transformatores ye bass frequentie. Anc on posse infortiar les per un reaction-spule ancient per induction ad li accord-spule.</p>
+<p>Ante detection on posse infortiar li lontan signales per accord in alt frequentie, per resonantie, trans-formator, etc.</p>
+<p>Por obtener variationes de current, on accupla li spules.</p>
+<p>Un tre stran’i fenomen es li infebliment del signales per un inconosset maniere, nominat fading.</p>
+<p>Li currentes es collectet e transformat ad sones per li escutor (simplic) o duplic escutor, o tre sovent per un alt-parlator, quel es del typ cornet o diffusor (cone). Ho-tempore li radio diffusion (broadcasting) es tre bon organisat ; existe mult radiostationes in omni landes del munde e li numere del radio-escutores cresce omni-die. In plu existe fanatic radio-amatores, queles cuida specialmen pri radio-telegraphie e obtene admirabil resultates precipue per curt ondes. Sam quam pri li mundi-lingue, li maxim bell resultates es obtenet in radio per devoet e laborios amatores.</p>
+<h2 id="aviation"><a class="header" href="#aviation">Aviation</a></h2>
+<p>Pro que li aviation deveni un medie de transport sat diffuset, noi cita li maxim usat termines.  It es ver que li majorite es li sam quam per li automobiles. Tamen un avion o aeroplane es monoplan o biplan. It possede un corpore e ales. Li motor es ye aer-refrigidation o ye aqua-refrigidation. It es rotativ o fix. Un o plur helices producte li propulsion. Ja mult aviation-portos existe, li maxim grand es tis de Le Bourget (Paris), Croydon (London) e Tempelhof (Berlin). Li unesim aviator qui crossat Atlantica e venit de New-York till Paris esset li famos Lindbergh. Costes e Le Brix fat li tur del munde.</p>
+<h2 id="excerptes-de-jurnales"><a class="header" href="#excerptes-de-jurnales">Excerptes de Jurnales</a></h2>
+<p><em>Un papagayo producte un noctal alerte in un grand dom.</em></p>
+<p>Li locatores del dom, quel have li numero 72 del strad Jouffroy, ha vivet, durant li nocte de mardi a mercurdi, quelc hores de febros angor. Extraet ex lor dormition per colpes in lor portas, poy per inquietant balbuties, li pacibil occupantes del dom bentost incontrat se sur li scaliere, trement eventualmen shocar per pede un sanguin cadavre. Directente li batal’on de su locatores, li portero, Sr Valee, prendet un baston, e li dom esset explorat : omni-cos esset in pace del cava till li tegment-chambres.</p>
+<p>Li locatores esset parat retornar in lor lettes, obsedet, involutarmen, per trublant reminiscenties de occultism, quande, del sixesim etage venit un bizarr impera : « Aperte, ci Rrroberrt ! » Li regardas afollat queles ja serchat un ectoplasm decovrit in li direction de un fasce de luce apuntat del lamp del portero un stran’i volatil, un verd papagaye quel clama denove :  « Aperte, ci Rrroberrt ! »</p>
+<p>Li papagaye esset aportat al policie-officie u yer-matin, su proprieta, Seniora Laurent, lyric actressa, logiat Bulvard Malesherbes, venit serchar le. Li avie, quel imaginat terrorisar su escutantes, retornat, sin altri protestation, in li logi ex quel il ha fuit.</p>
+<p><em>Le Journal</em> (Paris), 12 Januari 1928.</p>
+<h2 id="reclames-e-anuncias"><a class="header" href="#reclames-e-anuncias">Reclames e Anuncias</a></h2>
+<h3 id="demandas-de-employament"><a class="header" href="#demandas-de-employament">Demandas de employament</a></h3>
+<p>— Chaufero debutant desira employament por liveration per camionnette, conossent autogen suldation. Paul, 18, rue Simart, Paris.</p>
+<p>— Yu mann, stenograf, correspondent experientiat in tri lingues, frances, angles, german. Excellent referenties, conossenties de italian, sercha employament de secretario Paris, provincia o extrania. Scrir 23, Bd des Italiens, Paris.</p>
+<p>— Yun mann, employat pri scrituras, conossent li electric accessories, desira employament. Josef, rue Taitbout, 80, Paris.</p>
+<h3 id="vacant-employamentes"><a class="header" href="#vacant-employamentes">Vacant employamentes</a></h3>
+<p>— Important firma de calcul-machines sercha por Paris quelc representatives de 25 till 35 annus. It es necessi esser tre activ e ja conosser li calcul-machine. Presentar se saturdi, inter clocca 9 e 10. T. A. M. 25, rue Montmartre, Paris.</p>
+<p>— Bon dessinero mecanic, inmediatmen liber. Presentar se deman. Schneider, 10, rue d’Austerlitz, Paris.</p>
+<h3 id="logi"><a class="header" href="#logi">Logi</a></h3>
+<p>— Grand chambre meublat por un o du persones, calentation, electricita, telefon. 40, rue de Maubeuge, Paris 3esim etage.</p>
+<h3 id="divers"><a class="header" href="#divers">Divers</a></h3>
+<p>Explortator de old metalles sercha bronze, cupre, plomb, ferre fondet, ferre in grand e litt quantita. Misser offres detal’at con conditiones. Georges, rue Vivienne, 12.</p>
+<h2 id="politica"><a class="header" href="#politica">Politica</a></h2>
+<p>Li terminologie social e political es tre different secun li divers landes. Sovent li sam parole have contrari signification e to es li cuase de mult miscomprensiones. Pro to noi vole far un prova de classification eante de dextre a sinistre.</p>
+<p>Ye dextre es li conservatives (reactionarios) con li nationalistes (rassistes e fascistes).</p>
+<p>Ye li centre es li moderates (liberales).</p>
+<p>Ye sinistre es li democrates (in frances : radicales), socialistes (social-democrates), revolutionnari-socialistes e communistes. Tre strangi es li fact que in Britannia e America on nomina  « radicales » li partis de extrem-sinistri : socialistes e communistes. In Francia li « radicales » es simplic democrates.</p>
+<p>Li « liberales » de Britania es democrates. In Francia li « liberales » es clericales, ma, in contrari, in Belgia, li « liberales » es anticlerical e analog al « radicales » de Francia.</p>
+<p>Li social-revolutionarios de Russia es tre moderat e presc reform-socialistes. Apu to li social-revolutionarios de sinistri de Russia es vermen revolucionarios. No cita omni ti exemples por monstrar li desfacilita de classification e quant un inexperimentat traductor posse far mis-traductiones si il ne conosse bon li politica.</p>
+<p>In Britania existe li labor-parti, quel es un parti uniant li socialistic e syndicalistic ovreros.</p>
+<p>Extra li political partis sta li anarchistes, queles divide se in communist-anarchistes et individualist-anarchistes.</p>
+<p>La majorite del social-democratic partis es uniat in li Ovreral Socialistic Internationale (IIesim Internationale). Li Communistic partis es uniat in li Communistic Internationale o IIIesim Internationale (Komintern).</p>
+<p>Quelc socialistic partis sta extra li du Internationales e adhere al Buro International del Partis Revolutionari-Socialistic, in Paris.</p>
+<p>Li professional organisation del ovreros consiste in syndicates (trade-unions) queles posse esser confesional (religios), sin confession (laic) o men anti-revolutionari. Li majorite del syndicates adhere al Syndical Internationale (Amsterdam) o al Internationale Syndical Rubi (Moskva).</p>
+<p>Un tre important movement es ti del cooperativ societes, queles divide se in cooperatives de consumation (consum-uniones) e cooperatives de production.</p>
+<p>Conflictes posse evenir inter employantes (patrones) e employates (ovreros) pri conditiones de labor o de salarie. Si un mutual accord ne posse esser fat, li ovreros abandonna li loc de labor (fabricas, magasines, butiques, offices, etc.) Illi refusa laborar e bastamenta till li tempore quande illi obtene satisfaction o es fortiat retornar al labor pos un van lucta. Omni laboreros ne bastamente e tis qui continue li labor durant un bastament es tre despreciat de su companos.</p>
+<p>On ha videt que quelc vez, por replicar al bastament li patron clude su fabrica. It es un block-exclusion (lock-out).</p>
+<p>Si ne es sufficient labor, li ovreros es desoccupat e choma, illi deveni chomeros. Durant li ultim annus esset grand crises de chomage precipue in Britania e Central Europa. Si li overo es accidentat o vulnerat, il recive un pecunie-auxilie e il es curat per li assecur-companie, o li cassa de assecurantie. In quelc landes existe cassas contra li chomage e li maladie e anc pensiones de oldesse.</p>
+<p>Li grand producteros del munde anc es organisat internationalmen per trustes, cartelles, uniones, etc. Li maxim conosset es li cartell del stal e ti del chemicalies. Li organisation del munde deveni sempre plu international, super li frontieres, it es extraordinari que li serios mannes ne apporta un plu grand attention al problema del mundilingue.</p>
+<h2 id="religiones"><a class="header" href="#religiones">Religiones</a></h2>
+<p>Li principal religiones del glob es : in Chinia, Confucianism, Taoism e Buddhism, Brahmanism, e anc Christianism.  In plur partes de Asia e anc in Africa existe mani adeptes del Islamism e in Africa, Oceania, America e arctic regiones on trova primitiv religiones.</p>
+<p>Extra ti religiones, li maxim diffuset es li Christianism, quel divide se in Catholicism, Orthodoxism e Protestantism. Li religion del Israelides (Judeos) es li Judeism.</p>
+<p>Homes qui ne crede in alcun religion es liber-penseros, qui posse esser rationalistes (atheistes) o spiritualistes. Ultra religiones, es ancore grand associationes persecuent scopes filantropic o educativ, pro exemple, li Association Christian de Yun Mannes, li Salvation-Armee, li teosofic societes li franc massones, li ant-alcoolic (abstinent) societes, inter queles li maxim famos is li Bon Templeros.</p>
+<p>Mult persones interesse se per occultism e spiritism.</p>
+<h2 id="qualmen-comensar-e-finir-li-lettres"><a class="header" href="#qualmen-comensar-e-finir-li-lettres">Qualmen Comensar e Finir li Lettres</a></h2>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="maxim-comun.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="maxim-comun.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+        <!-- Google Analytics Tag -->
+        <script type="text/javascript">
+            var localAddrs = ["localhost", "127.0.0.1", ""];
+
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-151655688-1', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+        </script>
+        
+
+    </body>
+</html>
